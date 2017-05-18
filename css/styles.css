@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700");
+.projects-header {
+  width: 1000px;
+  height: 60px; }
+  .projects-header ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .projects-header ul li {
+      color: #FC5130;
+      cursor: default;
+      transition: .1s;
+      letter-spacing: 1px; }
+      .projects-header ul li:hover {
+        color: #FFA591; }
+
+.projects-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 1000px;
+  height: 650px; }
+  .projects-container :nth-child(n) {
+    position: absolute;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .projects-container :nth-child(n) .display {
+      width: 95%;
+      height: 95%;
+      background: #fff;
+      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); }
+    .projects-container :nth-child(n) .cover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: .8;
+      transition: .5s; }
+      .projects-container :nth-child(n) .cover:hover {
+        opacity: 0; }
+  .projects-container #box1 {
+    left: 0%;
+    top: 0%;
+    width: 25%;
+    height: 0%; }
+    .projects-container #box1 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-1.png");
+      background-size: cover;
+      background-position: center; }
+  .projects-container #box2 {
+    left: 25%;
+    top: 0%;
+    width: 25%;
+    height: 0%; }
+    .projects-container #box2 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-2.png");
+      background-size: cover;
+      background-position: center; }
+  .projects-container #box3 {
+    left: 100%;
+    top: 0%;
+    height: 33.33333%;
+    width: 0%; }
+    .projects-container #box3 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-7.png");
+      background-size: cover;
+      background-position: center; }
+  .projects-container #box4 {
+    left: 25%;
+    top: 66.66667%;
+    height: 33.33333%;
+    width: 0%; }
+    .projects-container #box4 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-3.png");
+      background-size: cover;
+      background-position: center; }
+  .projects-container #box5 {
+    top: 100%;
+    left: 25%;
+    width: 50%;
+    height: 0%; }
+    .projects-container #box5 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-6.png");
+      background-size: cover;
+      background-position: center; }
+  .projects-container #box6 {
+    left: 75%;
+    top: 33.33333%;
+    width: 25%;
+    height: 0%; }
+    .projects-container #box6 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-4.png");
+      background-size: cover;
+      background-position: center; }
+  .projects-container #box7 {
+    left: 100%;
+    top: 66.66667%;
+    height: 33.33333%;
+    width: 0%; }
+    .projects-container #box7 .display {
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-5.png");
+      background-size: cover;
+      background-position: center; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  font-family: 'Raleway', sans-serif; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden; }
+  .container .l-bar {
+    float: left;
+    width: 3%;
+    height: 100%;
+    background: #08132b; }
+  .container .main {
+    float: right;
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .main .nav-container {
+      width: 60%;
+      height: 40%;
+      display: flex;
+      justify-content: space-between; }
+      .container .main .nav-container .color1, .container .main .nav-container .color2, .container .main .nav-container .color3 {
+        height: 100%;
+        width: 21%;
+        border-radius: 10px; }
+      .container .main .nav-container .color1 {
+        background: linear-gradient(#110f24, #1c2541);
+        box-shadow: 0 5px #110f24, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+      .container .main .nav-container .color2 {
+        background: linear-gradient(#2b2b4f, #3a506b);
+        box-shadow: 0 5px #2b2b4f, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+      .container .main .nav-container .color3 {
+        background: linear-gradient(#396378, #5bc0be);
+        box-shadow: 0 5px #396378, 0px 8px 3px rgba(0, 0, 0, 0.3); }
+      .container .main .nav-container .nav {
+        width: 30%; }
+        .container .main .nav-container .nav .nav-head {
+          height: 40%; }
+          .container .main .nav-container .nav .nav-head h1, .container .main .nav-container .nav .nav-head h2 {
+            margin: 0;
+            text-align: right;
+            letter-spacing: 1px; }
+          .container .main .nav-container .nav .nav-head h1 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: #08132b; }
+          .container .main .nav-container .nav .nav-head h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #FC5130; }
+        .container .main .nav-container .nav nav {
+          height: 60%; }
+          .container .main .nav-container .nav nav ul {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            list-style: none; }
+            .container .main .nav-container .nav nav ul li {
+              font-size: 1.5em;
+              letter-spacing: 3px;
+              color: #3a506b;
+              cursor: default;
+              transition: .2s; }
+              .container .main .nav-container .nav nav ul li:hover {
+                color: #5bc0be; }
+  .container #resume-container {
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    width: 97%;
+    height: 100vh; }
+    .container #resume-container #resume {
+      width: 60%;
+      height: 100vh;
+      overflow: scroll;
+      margin: 0 auto;
+      background: #fafafa;
+      padding: 20px;
+      color: #2b2b4f;
+      border-top: 50px solid #08132b; }
+      .container #resume-container #resume .exit {
+        position: absolute;
+        top: 12px;
+        right: 20%;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.8); }
+      .container #resume-container #resume .resume-main {
+        width: 70%;
+        float: left;
+        letter-spacing: 1px; }
+        .container #resume-container #resume .resume-main p {
+          line-height: 30px; }
+      .container #resume-container #resume .resume-side {
+        width: 30%;
+        float: right; }
+  .container #contact-card {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    right: -300px; }
+    .container #contact-card #card {
+      width: 150%;
+      height: 40%;
+      border: 2px solid #08132b;
+      border-radius: 10px;
+      background: #fafafa;
+      box-sizing: border-box;
+      padding: 10px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+      .container #contact-card #card p {
+        line-height: 30px;
+        font-size: 1em;
+        text-align: justify; }
+      .container #contact-card #card ul {
+        list-style: none;
+        position: absolute;
+        bottom: 20px;
+        padding: 0;
+        margin: 0; }
+        .container #contact-card #card ul li {
+          float: left;
+          margin-right: 20px;
+          font-size: 1.5em; }
+  .container #about {
+    position: absolute;
+    width: 97%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0; }
+    .container #about section {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 150px;
+      height: 100%; }
+      .container #about section h1, .container #about section p {
+        text-align: center; }
+      .container #about section h1 {
+        font-size: 3em; }
+      .container #about section p {
+        font-size: 2em; }
+      .container #about section span {
+        font-size: 2em;
+        float: right; }
+
+/*# sourceMappingURL=styles.css.map */
