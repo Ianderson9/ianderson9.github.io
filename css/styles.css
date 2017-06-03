@@ -19,23 +19,24 @@
       .projects-header ul li:hover {
         color: #FFA591; }
 
-.projects-container {
+#projects-container {
   box-sizing: border-box;
   position: relative;
   width: 1000px;
-  height: 650px; }
-  .projects-container :nth-child(n) {
+  height: 650px;
+  display: none; }
+  #projects-container :nth-child(n) {
     position: absolute;
     background: #efefef;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .projects-container :nth-child(n) .display {
+    #projects-container :nth-child(n) .display {
       width: 95%;
       height: 95%;
       background: #fff;
       box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); }
-    .projects-container :nth-child(n) .cover {
+    #projects-container :nth-child(n) .cover {
       position: absolute;
       left: 0;
       top: 0;
@@ -44,71 +45,90 @@
       background: #fff;
       opacity: .8;
       transition: .5s; }
-      .projects-container :nth-child(n) .cover:hover {
+      #projects-container :nth-child(n) .cover:hover {
         opacity: 0; }
-  .projects-container #box1 {
+  #projects-container #box1 {
     left: 0%;
     top: 0%;
     width: 25%;
     height: 0%; }
-    .projects-container #box1 .display {
+    #projects-container #box1 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-1.png");
       background-size: cover;
       background-position: center; }
-  .projects-container #box2 {
+  #projects-container #box2 {
     left: 25%;
     top: 0%;
     width: 25%;
     height: 0%; }
-    .projects-container #box2 .display {
+    #projects-container #box2 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-2.png");
       background-size: cover;
       background-position: center; }
-  .projects-container #box3 {
+  #projects-container #box3 {
     left: 100%;
     top: 0%;
     height: 33.33333%;
     width: 0%; }
-    .projects-container #box3 .display {
+    #projects-container #box3 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-7.png");
       background-size: cover;
       background-position: center; }
-  .projects-container #box4 {
+  #projects-container #box4 {
     left: 25%;
     top: 66.66667%;
     height: 33.33333%;
     width: 0%; }
-    .projects-container #box4 .display {
+    #projects-container #box4 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-3.png");
       background-size: cover;
       background-position: center; }
-  .projects-container #box5 {
+  #projects-container #box5 {
     top: 100%;
     left: 25%;
     width: 50%;
     height: 0%; }
-    .projects-container #box5 .display {
+    #projects-container #box5 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-6.png");
       background-size: cover;
       background-position: center; }
-  .projects-container #box6 {
+  #projects-container #box6 {
     left: 75%;
     top: 33.33333%;
     width: 25%;
     height: 0%; }
-    .projects-container #box6 .display {
+    #projects-container #box6 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-4.png");
       background-size: cover;
       background-position: center; }
-  .projects-container #box7 {
+  #projects-container #box7 {
     left: 100%;
     top: 66.66667%;
     height: 33.33333%;
     width: 0%; }
-    .projects-container #box7 .display {
+    #projects-container #box7 .display {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/art-5.png");
       background-size: cover;
       background-position: center; }
+
+#web-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 1000px;
+  height: 650px; }
+  #web-container .slick-next, #web-container .slick-prev {
+    background: #ddd;
+    font-size: 3em; }
+  #web-container .web-display {
+    height: 100%; }
+    #web-container .web-display .web1, #web-container .web-display .web2, #web-container .web-display .web3 {
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ddd; }
+      #web-container .web-display .web1 img, #web-container .web-display .web2 img, #web-container .web-display .web3 img {
+        width: 90%; }
 
 body {
   margin: 0;

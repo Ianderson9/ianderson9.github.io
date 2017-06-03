@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Template</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
   </head>
   <body>
     <div class="container">
@@ -13,13 +15,13 @@
       <div class="main">
         <div class="projects-header">
           <ul>
-            <li>Web</li>
-            <li>Illustration</li>
-            <li>Generative Art</li>
-            <li>Other</li>
+            <li id="web-link">Web</li>
+            <li id="illustration-link">Illustration</li>
+            <li id="generative-link">Generative Art</li>
+            <li id="other">Other</li>
           </ul>
         </div>
-        <div class="projects-container">
+        <div id="projects-container">
           <div id="box1">
             <div class="display" id="display1">
 
@@ -77,11 +79,43 @@
             </div> -->
           </div>
         </div>
+        <div id="web-container">
+          <div class="web-display slider">
+            <div class="web1">
+              <img src="images/balladscreenshot.png" alt="">
+            </div>
+            <div class="web2">
+              <img src="images/cleanscreenshot.png" alt="">
+            </div>
+            <div class="web3">
+              <img src="images/jcpscreenshot.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
 
     <script src="https://use.fontawesome.com/555750ba4f.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
     <script src="js/projects.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".web-display").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        })
+        $("#web-link").click(function() {
+          $('#web-container').show();
+          $('#projects-container').hide();
+        })
+        $("#generative-link").click(function() {
+          $('#web-container').hide();
+          $('#projects-container').show();
+        })
+      })
+    </script>
   </body>
 </html>

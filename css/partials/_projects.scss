@@ -22,13 +22,14 @@
     }
   }
 }
-.projects-container {
+#projects-container {
   // background: #efefef;
   box-sizing: border-box;
   position: relative;
   // border: 1px solid #ddd;
   width: 1000px;
   height: 650px;
+
   :nth-child(n) {
     position: absolute;
     background: #efefef;
@@ -135,4 +136,39 @@
       background-position: center;
     }
   }
+
+  display: none;
+}
+#web-container {
+  box-sizing: border-box;
+  position: relative;
+  // border: 1px solid #ddd;
+  width: 1000px;
+  height: 650px;
+  .slick-next,.slick-prev {
+    background: #ddd;
+    font-size: 3em;
+  }
+  .web-display {
+    height: 100%;
+    .web1,.web2,.web3 {
+      // width: 100px;
+      height: 650px;
+      // background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ddd;
+      img {
+        width: 90%;
+      }
+    }
+    .web2 {
+      // background: blue;
+    }
+    .web3 {
+      // background: green;
+    }
+  }
+
 }
